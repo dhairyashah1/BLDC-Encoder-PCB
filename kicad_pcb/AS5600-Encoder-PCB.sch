@@ -38,7 +38,7 @@ U 1 1 61239588
 P 3145 1200
 F 0 "R1" H 3215 1246 50  0000 L CNN
 F 1 "4.7k" H 3215 1155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3075 1200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3075 1200 50  0001 C CNN
 F 3 "~" H 3145 1200 50  0001 C CNN
 	1    3145 1200
 	1    0    0    -1  
@@ -49,7 +49,7 @@ U 1 1 6123992D
 P 3440 1200
 F 0 "R2" H 3510 1246 50  0000 L CNN
 F 1 "4.7k" H 3510 1155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3370 1200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3370 1200 50  0001 C CNN
 F 3 "~" H 3440 1200 50  0001 C CNN
 	1    3440 1200
 	1    0    0    -1  
@@ -68,7 +68,7 @@ U 1 1 6123A1BF
 P 1000 2520
 F 0 "C1" H 885 2474 50  0000 R CNN
 F 1 "0.1uF" H 885 2565 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1038 2370 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1038 2370 50  0001 C CNN
 F 3 "~" H 1000 2520 50  0001 C CNN
 	1    1000 2520
 	-1   0    0    1   
@@ -79,7 +79,7 @@ U 1 1 6123B253
 P 1440 2520
 F 0 "C2" H 1555 2566 50  0000 L CNN
 F 1 "10uF" H 1555 2475 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 1478 2370 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1478 2370 50  0001 C CNN
 F 3 "~" H 1440 2520 50  0001 C CNN
 	1    1440 2520
 	1    0    0    -1  
@@ -198,7 +198,7 @@ F 3 "" H 5300 1255 50  0001 C CNN
 	1    5300 1255
 	0    -1   -1   0   
 $EndComp
-Text Label 5280 1455 0    50   ~ 0
+Text Label 5280 1355 0    50   ~ 0
 OUT
 $Comp
 L Connector:Conn_01x04_Male J1
@@ -241,21 +241,12 @@ Wire Wire Line
 Wire Wire Line
 	5160 1155 5290 1155
 Wire Wire Line
-	5160 1455 5280 1455
-Wire Wire Line
-	5160 1255 5210 1255
-Wire Wire Line
-	5210 1255 5210 1355
-Wire Wire Line
-	5210 1355 5160 1355
-Wire Wire Line
-	5210 1255 5300 1255
-Connection ~ 5210 1255
+	5160 1355 5280 1355
 $Comp
-L Connector:TestPoint TP2
+L Connector:TestPoint PGO1
 U 1 1 61273AD3
 P 3530 2290
-F 0 "TP2" H 3588 2408 50  0000 L CNN
+F 0 "PGO1" H 3588 2408 50  0000 L CNN
 F 1 "TestPoint" H 3588 2317 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3730 2290 50  0001 C CNN
 F 3 "~" H 3730 2290 50  0001 C CNN
@@ -263,10 +254,10 @@ F 3 "~" H 3730 2290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint 3V3
 U 1 1 61274B3F
 P 4655 2290
-F 0 "TP3" H 4713 2408 50  0000 L CNN
+F 0 "3V3" H 4713 2408 50  0000 L CNN
 F 1 "TestPoint" H 4713 2317 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4855 2290 50  0001 C CNN
 F 3 "~" H 4855 2290 50  0001 C CNN
@@ -274,25 +265,14 @@ F 3 "~" H 4855 2290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP5
+L Connector:TestPoint DIR1
 U 1 1 61275699
 P 4675 2685
-F 0 "TP5" H 4733 2803 50  0000 L CNN
+F 0 "DIR1" H 4733 2803 50  0000 L CNN
 F 1 "TestPoint" H 4733 2712 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4875 2685 50  0001 C CNN
 F 3 "~" H 4875 2685 50  0001 C CNN
 	1    4675 2685
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 61275D44
-P 4665 3045
-F 0 "TP4" H 4723 3163 50  0000 L CNN
-F 1 "TestPoint" H 4723 3072 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4865 3045 50  0001 C CNN
-F 3 "~" H 4865 3045 50  0001 C CNN
-	1    4665 3045
 	1    0    0    -1  
 $EndComp
 Text Label 3530 2410 0    50   ~ 0
@@ -303,10 +283,6 @@ Text Label 4655 2395 0    50   ~ 0
 VCC
 Text Label 1795 2370 0    50   ~ 0
 VCC
-Text Label 4665 3165 0    50   ~ 0
-GND
-Wire Wire Line
-	4665 3045 4665 3165
 Wire Wire Line
 	4675 2685 4675 2785
 Wire Wire Line
@@ -343,21 +319,6 @@ Text Notes 535  1920 0    157  ~ 0
 De-Coupling Cap
 Text Notes 3040 1925 0    157  ~ 0
 Testpoint and Connection Pads
-$Comp
-L Connector:TestPoint TP1
-U 1 1 612B9A0F
-P 3520 2695
-F 0 "TP1" H 3578 2813 50  0000 L CNN
-F 1 "TestPoint" H 3578 2722 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3720 2695 50  0001 C CNN
-F 3 "~" H 3720 2695 50  0001 C CNN
-	1    3520 2695
-	1    0    0    -1  
-$EndComp
-Text Label 3520 2815 0    50   ~ 0
-GND
-Wire Wire Line
-	3520 2695 3520 2815
 Text Notes 2875 3030 0    47   ~ 0
 PGO - NC : Normal Operation (TP2 NC)\n      GND : Programming Option (TP2-TP1)
 Wire Notes Line
@@ -366,4 +327,34 @@ Text Notes 555  1665 0    47   ~ 0
 Pin 1 and 2 connected: 3.3V supply operation
 Text Notes 5205 2760 0    59   ~ 0
 DIR - Direction\n1. Clockwise\n DIR - GND (TP5 - TP4; TP3 NC)\n2. Anticlockwise\n DIR - VCC (TP5 - TP3; TP4 NC)
+Wire Wire Line
+	5160 1255 5300 1255
+$Comp
+L power:GND #PWR0101
+U 1 1 6126228A
+P 5300 1455
+F 0 "#PWR0101" H 5300 1205 50  0001 C CNN
+F 1 "GND" V 5305 1327 50  0000 R CNN
+F 2 "" H 5300 1455 50  0001 C CNN
+F 3 "" H 5300 1455 50  0001 C CNN
+	1    5300 1455
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5160 1455 5300 1455
+Wire Wire Line
+	3520 2695 3520 2815
+Text Label 3520 2815 0    50   ~ 0
+GND
+$Comp
+L Connector:TestPoint GND1
+U 1 1 612B9A0F
+P 3520 2695
+F 0 "GND1" H 3578 2813 50  0000 L CNN
+F 1 "TestPoint" H 3578 2722 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3720 2695 50  0001 C CNN
+F 3 "~" H 3720 2695 50  0001 C CNN
+	1    3520 2695
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
