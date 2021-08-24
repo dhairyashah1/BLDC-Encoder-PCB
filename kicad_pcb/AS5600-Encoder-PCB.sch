@@ -243,10 +243,10 @@ Wire Wire Line
 Wire Wire Line
 	5160 1355 5280 1355
 $Comp
-L Connector:TestPoint PGO1
+L Connector:TestPoint PGO
 U 1 1 61273AD3
 P 3530 2290
-F 0 "PGO1" H 3588 2408 50  0000 L CNN
+F 0 "PGO" H 3588 2408 50  0000 L CNN
 F 1 "TestPoint" H 3588 2317 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3730 2290 50  0001 C CNN
 F 3 "~" H 3730 2290 50  0001 C CNN
@@ -265,10 +265,10 @@ F 3 "~" H 4855 2290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint DIR1
+L Connector:TestPoint DIR
 U 1 1 61275699
 P 4675 2685
-F 0 "DIR1" H 4733 2803 50  0000 L CNN
+F 0 "DIR" H 4733 2803 50  0000 L CNN
 F 1 "TestPoint" H 4733 2712 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4875 2685 50  0001 C CNN
 F 3 "~" H 4875 2685 50  0001 C CNN
@@ -307,8 +307,6 @@ Wire Notes Line
 	4525 1960 4530 1960
 Wire Notes Line
 	6805 475  6805 3380
-Text Notes 660  715  0    157  ~ 0
-AS5600 Encoder 
 Text Notes 3085 735  0    157  ~ 0
 I2C Pullup
 Text Notes 4995 735  0    157  ~ 0
@@ -347,14 +345,16 @@ Wire Wire Line
 Text Label 3520 2815 0    50   ~ 0
 GND
 $Comp
-L Connector:TestPoint GND1
+L Connector:TestPoint GND
 U 1 1 612B9A0F
 P 3520 2695
-F 0 "GND1" H 3578 2813 50  0000 L CNN
+F 0 "GND" H 3578 2813 50  0000 L CNN
 F 1 "TestPoint" H 3578 2722 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3720 2695 50  0001 C CNN
 F 3 "~" H 3720 2695 50  0001 C CNN
 	1    3520 2695
 	1    0    0    -1  
 $EndComp
+Text Notes 660  715  0    157  ~ 0
+AS5600 Encoder 
 $EndSCHEMATC
