@@ -7,8 +7,8 @@ This repository contains KiCAD Design Files for Encoder PCB made using AS5600 ha
 
 ## Renders
 
-### Front Side
+### Front View
 <img src="assets/front.png">
 
-### Back Side
-<img src="assets/back.png">
+### General View
+<img src="assets/general.png">
